@@ -46,15 +46,15 @@ const App = () => {
   }, []);
 
   return (
-    <div className='flex justify-center items-center w-screen h-screen bg-fuchsia-200'>
-      <div className='flex flex-col justify-center items-center gap-8 bg-fuchsia-900 rounded-xl p-8 m-4'>
-        <p className='text-2xl md:text-4xl tracking-widest text-yellow-400'>{capitalizedMonth.toUpperCase()}</p>
+    <div className='flex justify-center items-center w-screen h-screen bg-bg-image bg-cover bg-center'>
+      <div className='flex flex-col justify-center items-center gap-8 rounded-xl p-8 m-4 bg-gray-600 bg-opacity-60 backdrop-blur-sm shadow-lg'>
+        <p className='text-2xl md:text-4xl tracking-widest text-white'>{capitalizedMonth.toUpperCase()}</p>
         {
           remainingWorkingDays
             ? (
               <>
-                <p className='text-4xl md:text-6xl text-yellow-400'>Zbývá pracovních dnů: <span className='font-bold text-yellow-700'>{remainingWorkingDays}</span></p>
-                <p className='text-3xl md:text-5xl text-yellow-400'>Pracovních dnů: <span className='font-semibold text-yellow-700'>{workingDays}</span></p>
+                <p className='text-4xl md:text-6xl text-white'>Zbývá pracovních dnů: <span className='font-bold white-white'>{remainingWorkingDays}</span></p>
+                <p className='text-3xl md:text-5xl text-white'>Pracovních dnů: <span className='font-semibold white-white'>{workingDays}</span></p>
               </>
             )
             : (
